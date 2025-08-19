@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react()
    ,tailwindcss(),],
-   base:"./chat-bot/",
+   base:"/chat-bot/",
 })
