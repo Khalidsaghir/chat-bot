@@ -1,0 +1,186 @@
+/* Modern button styles for login, sign up, and switch */
+.login-btn, .signup-link {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+  transition: background 0.3s, transform 0.2s;
+  margin-bottom: 8px;
+}
+
+.login-btn:hover, .signup-link:hover {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.signup-link {
+  width: auto;
+  padding: 8px 18px;
+  background: #fff;
+  color: #2a5298;
+  border: 2px solid #2a5298;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.signup-link:hover {
+  background: #2a5298;
+  color: #fff;
+  border-color: #1e3c72;
+}
+
+/* Background with gradient animation */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2a5298;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 8px rgba(42,82,152,0.3);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1e3c72;
+  transform: translateY(-2px);
+}
+
+/* Header */
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4a90e2;   /* Header background color */
+  color: white;
+  padding: 10px 15px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.chatbot-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.chatbot-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;   /* makes logo circular */
+  margin-right: 10px;
+}
+
+.chatbot-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+
+.footer-text a {
+  color: #2a5298;
+  text-decoration: none;
+  font-weight: bold;
+}

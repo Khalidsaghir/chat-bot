@@ -1,0 +1,83 @@
+/* Reset default margin and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body, html, #root {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Center content (for login or signup pages) */
+.centered-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* Container Card */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Button base */
+button {
+  display: inline-block;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1c5dc9;
+}
+
+/* Links */
+a {
+  color: #2f80ed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Error Message */
+.error-msg {
+  color: #ff4d4f;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
